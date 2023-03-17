@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "user": "Martin Odegaard",
+    "tweets": 111,
+    "followers": 100100,
+    "avatar": "https://static.vecteezy.com/system/resources/previews/009/380/075/non_2x/man-face-clipart-design-illustration-free-png.png",
+    "status": "follow"
+  },
+  {
+    "id": 2,
+    "user": "Gabriel Martinelli",
+    "tweets": 222,
+    "followers": 100200,
+    "avatar": "https://static.vecteezy.com/system/resources/previews/009/305/158/non_2x/man-face-clipart-design-illustration-free-png.png",
+    "status": "follow"
+  },
+  {
+    "id": 3,
+    "user": "Gabriel Jesus",
+    "tweets": 333,
+    "followers": 100300,
+    "avatar": "https://static.vecteezy.com/system/resources/previews/009/342/570/non_2x/man-face-clipart-design-illustration-free-png.png",
+    "status": "follow"
+  },
+  {
+    "id": 4,
+    "user": "Oleksandr Zinchenko",
+    "tweets": 444,
+    "followers": 100400,
+    "avatar": "https://static.vecteezy.com/system/resources/previews/009/381/326/non_2x/man-face-expression-clipart-design-illustration-free-png.png",
+    "status": "follow"
+  }
+]
