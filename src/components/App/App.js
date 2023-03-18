@@ -1,4 +1,4 @@
-import { TwitsCardList } from './components/TwitsCardList/TwitsCardList';
+import { TwitsCardList } from '../TwitsCardList/TwitsCardList';
 import { Container } from './App.styled';
 
 function App() {

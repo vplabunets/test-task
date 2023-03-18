@@ -10,6 +10,9 @@ import {
 } from './UserInfo.styled';
 
 export const UserInfo = ({ id, tweets, followers, changeUserInfo, status }) => {
+  const normalizedFollowers = new Intl.NumberFormat('en-US', {
+    style: 'decimal',
+  }).format(followers);
   return (
     <UserInfoContainer>
       <DividerBox>
@@ -18,7 +21,7 @@ export const UserInfo = ({ id, tweets, followers, changeUserInfo, status }) => {
       </DividerBox>
       <UserInfoList>
         <UserInfoItem>{tweets} TWEETS</UserInfoItem>
-        <UserInfoItem>FOLLOWERS {followers}</UserInfoItem>
+        <UserInfoItem>FOLLOWERS {normalizedFollowers}</UserInfoItem>
       </UserInfoList>
       <Button id={id} changeUserInfo={changeUserInfo} status={status} />
     </UserInfoContainer>
