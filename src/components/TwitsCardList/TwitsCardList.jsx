@@ -17,14 +17,14 @@ export const TwitsCardList = () => {
       if (user.id === id) {
         const index = users.indexOf(user);
         if (user.status === 'follow') {
-          setUsers(previousState => {
+          return setUsers(previousState => {
             previousState[index].followers += 1;
             previousState[index].status = 'following';
             return [...previousState];
           });
         }
         if (user.status === 'following') {
-          setUsers(previousState => {
+          return setUsers(previousState => {
             previousState[index].followers -= 1;
             previousState[index].status = 'follow';
             return [...previousState];
