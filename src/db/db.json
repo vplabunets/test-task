@@ -22,5 +22,13 @@
     "followers": 100300,
     "avatar": "https://static.vecteezy.com/system/resources/previews/009/342/570/non_2x/man-face-clipart-design-illustration-free-png.png",
     "status": "follow"
+  },
+  {
+    "id": 4,
+    "user": "Oleksandr Zinchenko",
+    "tweets": 444,
+    "followers": 100400,
+    "avatar": "https://static.vecteezy.com/system/resources/previews/009/381/326/non_2x/man-face-expression-clipart-design-illustration-free-png.png",
+    "status": "follow"
   }
 ]
