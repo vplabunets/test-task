@@ -5,14 +5,14 @@ import { List } from './TwitsCardsList.styled';
 import db from '../../db/db.json';
 
 export const TwitsCardList = () => {
-  const [users, setUsers] = useState(db);
+  const [users, setUsers] = useState(getLocalStorage('localStorageData') || db);
   const status = 'hello';
+
   useEffect(() => {
-    getLocalStorage('localStorageData');
     setLocalStorage(users, 'localStorageData');
   }, [users]);
 
-  const changeUser = id => {
+  const changeUserInfo = id => {
     for (const user of users) {
       if (user.id === id) {
         const index = users.indexOf(user);
@@ -40,7 +40,7 @@ export const TwitsCardList = () => {
           <TwitsCard
             key={user.id}
             user={user}
-            changeUser={changeUser}
+            changeUserInfo={changeUserInfo}
             status={status}
           />
         );

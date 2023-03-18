@@ -1,21 +1,21 @@
 import React from 'react';
 import { Avatar } from '../Avatar/Avatar';
 import { UserInfo } from '../UserInfo/UserInfo';
+import logo from '../../images/logo.png';
 import {
   TwitCardItem,
   BackgroundImage,
   Container,
   Logo,
   LogoImage,
-  Container1,
+  TwitsCardContainer,
 } from './TwitsCard.styled';
-import logo from '../../images/logo.png';
 
-export const TwitsCard = ({ user, changeUser }) => {
+export const TwitsCard = ({ user, changeUserInfo }) => {
   const { id, avatar, tweets, followers, status } = user;
 
   return (
-    <Container1>
+    <TwitsCardContainer>
       <TwitCardItem>
         <Container>
           <BackgroundImage>
@@ -28,11 +28,11 @@ export const TwitsCard = ({ user, changeUser }) => {
               id={id}
               tweets={tweets}
               followers={followers}
-              changeUser={changeUser}
+              changeUserInfo={changeUserInfo}
             />
           </BackgroundImage>
         </Container>
       </TwitCardItem>
-    </Container1>
+    </TwitsCardContainer>
   );
 };

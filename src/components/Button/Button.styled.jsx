@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { constants } from '../../constants/constants';
 
 export const ButtonWrapper = styled.button`
   cursor: pointer;
@@ -16,10 +17,10 @@ export const ButtonWrapper = styled.button`
   width: 196px;
   height: 50px;
   background-color: ${p =>
-    p.status === 'follow' ? 'rgba(235, 216, 255, 1)' : 'rgba(92, 211, 168, 1)'};
-  box-shadow: 0px 3.43693px 3.43693px rgba(0, 0, 0, 0.25);
+    p.status === 'follow' ? constants.buttonColor : constants.activeColor};
+  box-shadow: 0px 3.43693px 3.43693px ${constants.buttonShadowColor};
   border-radius: 10.3108px;
 `;
 export const ButtonText = styled.p`
-  /* vertical-align: middle; */
+  color: ${constants.buttonTextColor};
 `;

@@ -3,7 +3,7 @@ import backgroundImage from '../../images/background-photo.png';
 
 export const TwitCardItem = styled.li``;
 
-export const Container1 = styled.div`
+export const TwitsCardContainer = styled.div`
   display: flex;
   margin: 0 auto;
   justify-content: center;

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button } from '../UI/Button';
+import { Button } from '../Button/Button';
 import {
   DividerBox,
   DividerLeft,
@@ -9,7 +9,7 @@ import {
   UserInfoList,
 } from './UserInfo.styled';
 
-export const UserInfo = ({ id, tweets, followers, changeUser, status }) => {
+export const UserInfo = ({ id, tweets, followers, changeUserInfo, status }) => {
   return (
     <UserInfoContainer>
       <DividerBox>
@@ -20,7 +20,7 @@ export const UserInfo = ({ id, tweets, followers, changeUser, status }) => {
         <UserInfoItem>{tweets} TWEETS</UserInfoItem>
         <UserInfoItem>FOLLOWERS {followers}</UserInfoItem>
       </UserInfoList>
-      <Button id={id} changeUser={changeUser} status={status} />
+      <Button id={id} changeUserInfo={changeUserInfo} status={status} />
     </UserInfoContainer>
   );
 };
